@@ -10,6 +10,8 @@ class App extends React.Component {
       todos: todosdata
     };
     this.handleChange = this.handleChange.bind(this);
+    console.log("Hello World")
+    console.log("Hello World 2")
   }
 
   handleChange(id) {

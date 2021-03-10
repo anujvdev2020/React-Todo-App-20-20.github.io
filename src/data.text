@@ -1,0 +1,76 @@
+anuj@anuj-Lenovo-ideapad-320-15ISK:~/Desktop/gitnew$ pwd
+/home/anuj/Desktop/gitnew
+anuj@anuj-Lenovo-ideapad-320-15ISK:~/Desktop/gitnew$ ls
+anuj@anuj-Lenovo-ideapad-320-15ISK:~/Desktop/gitnew$ git clone https://github.com/anujvdev2020/React-Todo-App-20-20.github.io.gitCloning into 'React-Todo-App-20-20.github.io'...
+remote: Enumerating objects: 15, done.
+remote: Counting objects: 100% (15/15), done.
+remote: Compressing objects: 100% (13/13), done.
+remote: Total 15 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (15/15), 3.44 KiB | 880.00 KiB/s, done.
+anuj@anuj-Lenovo-ideapad-320-15ISK:~/Desktop/gitnew$ pwd
+/home/anuj/Desktop/gitnew
+anuj@anuj-Lenovo-ideapad-320-15ISK:~/Desktop/gitnew$ ls
+React-Todo-App-20-20.github.io
+anuj@anuj-Lenovo-ideapad-320-15ISK:~/Desktop/gitnew$ cd ./
+anuj@anuj-Lenovo-ideapad-320-15ISK:~/Desktop/gitnew$ ^C
+anuj@anuj-Lenovo-ideapad-320-15ISK:~/Desktop/gitnew$ pwd
+/home/anuj/Desktop/gitnew
+anuj@anuj-Lenovo-ideapad-320-15ISK:~/Desktop/gitnew$ ls
+React-Todo-App-20-20.github.io
+anuj@anuj-Lenovo-ideapad-320-15ISK:~/Desktop/gitnew$ cd React-Todo-App-20-20.github.io
+anuj@anuj-Lenovo-ideapad-320-15ISK:~/Desktop/gitnew/React-Todo-App-20-20.github.io$ pwd
+/home/anuj/Desktop/gitnew/React-Todo-App-20-20.github.io
+anuj@anuj-Lenovo-ideapad-320-15ISK:~/Desktop/gitnew/React-Todo-App-20-20.github.io$ ls
+package.json  public  README.md  src
+anuj@anuj-Lenovo-ideapad-320-15ISK:~/Desktop/gitnew/React-Todo-App-20-20.github.io$ pwd
+/home/anuj/Desktop/gitnew/React-Todo-App-20-20.github.io
+anuj@anuj-Lenovo-ideapad-320-15ISK:~/Desktop/gitnew/React-Todo-App-20-20.github.io$ ls
+package.json  public  README.md  src
+anuj@anuj-Lenovo-ideapad-320-15ISK:~/Desktop/gitnew/React-Todo-App-20-20.github.io$ git checkout 
+Your branch is up to date with 'origin/main'.
+anuj@anuj-Lenovo-ideapad-320-15ISK:~/Desktop/gitnew/React-Todo-App-20-20.github.io$ git checkout master
+error: pathspec 'master' did not match any file(s) known to git
+anuj@anuj-Lenovo-ideapad-320-15ISK:~/Desktop/gitnew/React-Todo-App-20-20.github.io$ git checkout main
+Already on 'main'
+Your branch is up to date with 'origin/main'.
+anuj@anuj-Lenovo-ideapad-320-15ISK:~/Desktop/gitnew/React-Todo-App-20-20.github.io$ git checkout -b dev
+Switched to a new branch 'dev'
+anuj@anuj-Lenovo-ideapad-320-15ISK:~/Desktop/gitnew/React-Todo-App-20-20.github.io$ pwd
+/home/anuj/Desktop/gitnew/React-Todo-App-20-20.github.io
+anuj@anuj-Lenovo-ideapad-320-15ISK:~/Desktop/gitnew/React-Todo-App-20-20.github.io$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+anuj@anuj-Lenovo-ideapad-320-15ISK:~/Desktop/gitnew/React-Todo-App-20-20.github.io$ git checkout dev
+Switched to branch 'dev'
+anuj@anuj-Lenovo-ideapad-320-15ISK:~/Desktop/gitnew/React-Todo-App-20-20.github.io$ git status
+On branch dev
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   src/App.js
+
+no changes added to commit (use "git add" and/or "git commit -a")
+anuj@anuj-Lenovo-ideapad-320-15ISK:~/Desktop/gitnew/React-Todo-App-20-20.github.io$ git remote -v
+origin  https://github.com/anujvdev2020/React-Todo-App-20-20.github.io.git (fetch)
+origin  https://github.com/anujvdev2020/React-Todo-App-20-20.github.io.git (push)
+anuj@anuj-Lenovo-ideapad-320-15ISK:~/Desktop/gitnew/React-Todo-App-20-20.github.io$ git add .
+anuj@anuj-Lenovo-ideapad-320-15ISK:~/Desktop/gitnew/React-Todo-App-20-20.github.io$ git commit 
+[dev 73a255b] added console.log
+ 1 file changed, 1 insertion(+)
+anuj@anuj-Lenovo-ideapad-320-15ISK:~/Desktop/gitnew/React-Todo-App-20-20.github.io$ git commit -m "console.log"
+On branch dev
+nothing to commit, working tree clean
+anuj@anuj-Lenovo-ideapad-320-15ISK:~/Desktop/gitnew/React-Todo-App-20-20.github.io$ git push origin dev
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 394 bytes | 394.00 KiB/s, done.
+Total 4 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+remote: 
+remote: Create a pull request for 'dev' on GitHub by visiting:
+remote:      https://github.com/anujvdev2020/React-Todo-App-20-20.github.io/pull/new/dev
+remote: 
+To https://github.com/anujvdev2020/React-Todo-App-20-20.github.io.git
+ * [new branch]      dev -> dev
